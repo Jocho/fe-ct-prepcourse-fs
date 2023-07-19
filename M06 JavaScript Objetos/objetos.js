@@ -43,7 +43,7 @@ atuendosBrackets['piernas'] = ['Bermudas', 'Pantalones'];
 
 fiestasBrackets['cumple'] = ['Infantiles', 'Adultos'];
 
-console.log(atuendos);
-console.log(fiestas);
-console.log(atuendosBrackets);
-console.log(fiestasBrackets);
+// console.log(atuendos);
+// console.log(fiestas);
+// console.log(atuendosBrackets);
+// console.log(fiestasBrackets);

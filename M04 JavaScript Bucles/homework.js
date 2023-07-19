@@ -38,7 +38,7 @@ function conection(status) {
    } else if(status == 2){
       return "Away"
    } else {
-      return "offline"
+      return "Offline"
    }
 }
 
@@ -54,7 +54,7 @@ function saludo(idioma) {
    } else if(idioma == "mandarin"){
       return "Ni Hao!"
    } else if(idioma == "ingles"){
-      return "Hello"
+      return "Hello!"
    } else {
       return "Hola!"
    }
@@ -70,16 +70,17 @@ function colors(color) {
    // Si no es ninguno de esos colores           --> "Color not found".
    // IMPORTANTE: utilizar el statement SWITCH.
    // Tu código:
-   if(color == "blue"){
-      return "this is blue"
-   } else if(color == "red"){
-      return "This is red"
-   } else if(color == "green"){
-      return "This is green"
-   } else if(color == "orange"){
-      return "This is orange"
-   } else {
-      return "Color not found"
+   switch (color) {
+      case "blue":
+         return "This is blue";
+      case "red":
+         return "This is red";
+      case "green":
+         return "This is green";
+      case "orange":
+         return "This is orange";
+      default:
+         return "Color not found";
    }
 }
 
@@ -125,12 +126,12 @@ function fizzBuzz(num) {
    // Si "num" es divisible entre 3 y 5 (ambos), retorna "fizzbuzz".
    // De lo contrario, retorna false.
    // Tu código:
-   if(num % 3 === 0){
-      return "fizz";
-   } else if(num % 5 === 0){
-      return "buzz";
-   } else if(num % 3 === 0 && num % 5 === 0){
+   if (num % 3 === 0 && num % 5 === 0) {
       return "fizzbuzz";
+   } else if (num % 3 === 0) {
+      return "fizz";
+   } else if (num % 5 === 0) {
+      return "buzz";
    } else {
       return false;
    }
@@ -168,7 +169,7 @@ function esPrimo(num) {
       return false; // Los numeros negativos, 0 y 1 no son primos
    }
    for(let i = 2; i <= Math.sqrt(num); i++) {
-      if (num % 1 === 0){
+      if (num % i === 0){
          return false; // Si el numero es divisible por otro numero distinto de 1 y si mismo, no es primo
       }
    }
