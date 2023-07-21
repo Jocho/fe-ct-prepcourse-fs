@@ -61,10 +61,10 @@ function agregarMetodo() {
  }
  
  // Crear un objeto Persona con los valores adecuados
- const persona = new Persona("Juan", "Pérez", 22, "Calle Principal");
+  const persona = new Persona("Juan", "Pérez", 22, "Calle Principal");
  
  // Obtener el string con el nombre y la edad
- console.log(persona.datos()); // Output: "Juan, 22 años"
+//  console.log(persona.datos()); // Output: "Juan, 22 años"
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
