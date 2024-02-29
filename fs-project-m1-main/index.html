@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <!-- <link rel="stylesheet" href="./styles/reset.css" /> -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>My protafolio</title>
+  </head>
+  <body>
+    <header>
+      <h1>My Webpage</h1>
+      <nav>
+        <ul>
+          <li>About Me</li>
+          <li>Favorites Tecnologies so far</li>
+          <li>Hobbies</li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="aboutMe">
+        <article>
+          <img src="./assets/images/jocho.png" alt="">
+        </article>
+        <h2>About Me</h2>
+        <p> <em><a href="https://linux.com">Linux</a>/<a href="https://www.microsoft.com/en-us/">Windows</a>/<a href="https://www.apple.com/">Mac</a> SysAdmin <strong><a href="https://skillcrush.com/blog/front-end-back-end-full-stack/">Full Stack Developer</a></strong></em></p>
+        <p1>I am a future Software Engineer but actually i work as SysAdmin using Free
+           Software as GNU/Linux particurlarlly Debian. I'am fron caracas Venezuela</p1><br>      </section>
+      <section id="favTech">
+        <h2>Favorites Tecnologies so far</h2>
+        <article>
+          <ul>
+            <li>
+              <h3>HTML5</h3>
+              <img src="./assets/images/html_logo.png" alt="image HTML" />
+            </li>
+            <li>
+              <h3>CSS3</h3>
+              <img src="./assets/images/css_logo.png" alt="image CSS" />
+            </li>
+            <li>
+              <h3>JavaScript</h3>
+              <img src="./assets/images/js_logo.png" alt="image JavaScript" />
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section id="actFav">
+        <h2>Hobbies</h2>
+        <form id="form">
+          <div>
+            <label for="title"> Title: </label>
+            <input type="text" id="title" placeholder="Quality Time with my Family" />
+          </div>
+          <div>
+            <label for="description"> Description: </label>
+            <textarea
+              name="description"
+              id="description"
+              rows="2"
+              placeholder="I enjoy reading, particularly the mystery genre."></textarea>
+          </div>
+          <div>
+            <label for="imgUrl"> Image URL: </label>
+            <input type="imgUrl" id="imgUrl" placeholder="https://google.com" />
+          </div>
+          <input type="submit" value="Send" id="add" />
+        </form>
+        <span id="noHayAct">No Activities (</span>
+        <div id="container"></div>
+      </section>
+    </main>
+    <footer>
+      <p>Made by Jøchø. Copyright</p>
+    </footer>
+    <script src="./scripts/index.js"></script>
+  </body>
+</html>
